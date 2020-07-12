@@ -2,7 +2,6 @@ const Pagination = ({itemsPerPage, totalItems, onNext}) => {
     const pages =Array.apply(null, Array(totalItems/itemsPerPage)).map(function (x, i) { return i; })
 
     return(
-      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div className="mt-8 bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
             <div className="hidden sm:flex-1 sm:flex sm:items-center sm:justify-center">
               <div>
@@ -16,7 +15,6 @@ const Pagination = ({itemsPerPage, totalItems, onNext}) => {
               </div>
             </div>
           </div>
-        </div>
     )
 }
 
